@@ -1,20 +1,37 @@
 package lesson3task5;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import static org.junit.jupiter.api.Assertions.*;
 class TriangleTest {
 
     @Test
     void shouldBeTrueForRightTriangle() {
-        boolean isRight = Triangle.isRight(3, 4, 5);
-        Assertions.assertEquals(true, isRight);
+        //given
+        int sideA = 3;
+        int sideB = 4;
+        int hypotenuse = 5;
+
+        //when
+        boolean isRight = Triangle.isRight(sideA, sideB, hypotenuse);
+
+        //then
+        assertTrue(isRight);
     }
 
     @Test
     void shouldBeFalseForNotRightTriangle() {
-        boolean isRight = Triangle.isRight(12, 4, 8);
-        Assertions.assertEquals(false, isRight);
+
+        //given
+        int sideA = 12;
+        int sideB = 4;
+        int hypotenuse = 8;
+
+        //when
+        boolean isRight = Triangle.isRight(sideA, sideB, hypotenuse);
+
+        //then
+        assertFalse(isRight);
     }
 }
