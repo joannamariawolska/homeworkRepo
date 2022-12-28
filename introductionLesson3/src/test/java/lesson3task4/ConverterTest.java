@@ -6,7 +6,7 @@ class ConverterTest {
 
     @org.junit.jupiter.api.Test
     void shouldConvertMinutesToSeconds() {
-        int minutesToSeconds = Converter.minutesToSeconds(5);
-        Assertions.assertEquals(300, minutesToSeconds);
+        int seconds = Converter.minutesToSeconds(5);
+        Assertions.assertEquals(300, seconds);
     }
 }
