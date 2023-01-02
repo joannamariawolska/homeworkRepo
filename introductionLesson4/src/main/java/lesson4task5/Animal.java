@@ -1,8 +1,8 @@
 package lesson4task5;
 
-public class Animal {
+public abstract class Animal {
 
-    String name;
+    private String name;
 
     public Animal(String name) {
         this.name = name;
