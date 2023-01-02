@@ -2,8 +2,8 @@ package lesson4task2;
 
 public abstract class Shape {
 
-    public abstract  double getArea();
+    abstract  double getArea();
 
-    public abstract double getPerimeter();
+    abstract double getPerimeter();
 
 }
