@@ -1,6 +1,6 @@
 package lesson4task3;
 
-public class Trapezoid implements AreaAndPerimeter{
+public class Trapezoid implements Shape{
 
     double sideA;
     double sideB;
@@ -16,7 +16,6 @@ public class Trapezoid implements AreaAndPerimeter{
         this.sideD = sideD;
         this.height = height;
     }
-
 
 
     @Override

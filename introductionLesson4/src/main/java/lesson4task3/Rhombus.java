@@ -1,6 +1,6 @@
 package lesson4task3;
 
-public class Rhombus implements AreaAndPerimeter {
+public class Rhombus implements Shape {
 
     double sideA;
     double height;

@@ -1,6 +1,6 @@
 package lesson4task3;
 
-public interface AreaAndPerimeter {
+public interface Shape {
 
   double getArea();
 
