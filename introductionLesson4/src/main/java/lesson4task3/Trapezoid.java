@@ -8,15 +8,13 @@ public class Trapezoid implements Shape{
     double sideD;
     double height;
 
-
-    public Trapezoid(double sideA, double sideB, double height, double sideC, double sideD) {
+    public Trapezoid(double sideA, double sideB, double sideC, double sideD, double height) {
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
         this.sideD = sideD;
         this.height = height;
     }
-
 
     @Override
     public double getArea() {
