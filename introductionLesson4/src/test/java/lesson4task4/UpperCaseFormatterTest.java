@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class UpperCaseFormatterTest {
 
     @Test
-    void formatText() {
+    void shouldFormatTextToUpperCase() {
         //given
         UpperCaseFormatter formatter = new UpperCaseFormatter();
 

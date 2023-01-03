@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class LowerCaseFormatterTest {
 
     @Test
-    void formatText() {
+    void shouldFormatTextToLowerCase() {
         //given
         LowerCaseFormatter formatter = new LowerCaseFormatter();
 
