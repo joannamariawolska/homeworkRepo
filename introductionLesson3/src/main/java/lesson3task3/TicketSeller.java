@@ -6,6 +6,10 @@ public class TicketSeller extends BaseEmployee{
         super(name, surname, employmentYear, salary);
     }
 
+    public TicketSeller(String name, String surname, int employmentYear) {
+        super(name, surname, employmentYear);
+    }
+
     @Override
     public int calculateMonthlySalary() {
         return getSalary();

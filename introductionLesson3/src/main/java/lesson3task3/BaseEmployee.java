@@ -5,11 +5,18 @@ public abstract class BaseEmployee {
     private final String name;
     private final String surname;
     private final int employmentYear;
-    public static final int BASE_SALARY = 3000;
+    private static final int BASE_SALARY = 3000;
     private final int salary;
 
 
     public BaseEmployee(String name, String surname, int employmentYear, int salary) {
+        this.name = name;
+        this.surname = surname;
+        this.employmentYear = employmentYear;
+        this.salary = salary;
+    }
+
+    public BaseEmployee(String name, String surname, int employmentYear) {
         this.name = name;
         this.surname = surname;
         this.employmentYear = employmentYear;
