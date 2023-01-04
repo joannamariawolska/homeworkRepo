@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>introductionLesson3</artifactId>
+    <artifactId>introductionLesson4</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -14,14 +14,14 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-
     <dependencies>
-      <dependency>
-          <groupId>org.projectlombok</groupId>
-          <artifactId>lombok</artifactId>
-          <version>1.18.24</version>
-          <scope>provided</scope>
-      </dependency>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.9.1</version>
+        <scope>test</scope>
+    </dependency>
     </dependencies>
- </project>
 
+
+</project>
