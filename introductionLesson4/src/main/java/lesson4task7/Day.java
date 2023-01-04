@@ -2,11 +2,13 @@ package lesson4task7;
 
 public class Day {
 
-    private WeekDays day;
-
-    public Day(WeekDays day) {
-        this.day = day;
+    public String convertToString(WeekDays day){
+        return day.toString();
     }
 
-    //metoda
+    public static void main(String[] args) {
+
+        Day day = new Day();
+        System.out.println(day.convertToString(WeekDays.Monday));
+    }
 }
