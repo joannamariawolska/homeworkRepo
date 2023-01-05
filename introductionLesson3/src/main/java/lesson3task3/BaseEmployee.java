@@ -2,10 +2,10 @@ package lesson3task3;
 
 public abstract class BaseEmployee {
 
+    private static final int BASE_SALARY = 3000;
     private final String name;
     private final String surname;
     private final int employmentYear;
-    private static final int BASE_SALARY = 3000;
     private final int salary;
 
 
