@@ -8,7 +8,6 @@ public abstract class BaseEmployee {
     private final int employmentYear;
     private final int salary;
 
-
     public BaseEmployee(String name, String surname, int employmentYear, int salary) {
         this.name = name;
         this.surname = surname;

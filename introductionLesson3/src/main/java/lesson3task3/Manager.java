@@ -23,5 +23,4 @@ public class Manager extends BaseEmployee{
     public void setBonus(int bonus) {
         this.bonus = bonus;
     }
-
 }
