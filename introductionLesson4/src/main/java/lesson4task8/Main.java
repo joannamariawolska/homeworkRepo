@@ -10,7 +10,5 @@ public class Main {
          System.out.println(person1.equals(person2));
          System.out.println(person2.equals(person3));
          System.out.println(person1.hashCode());
-
-
     }
 }
