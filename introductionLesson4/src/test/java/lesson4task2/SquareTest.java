@@ -8,24 +8,24 @@ class SquareTest {
     @Test
     void shouldBeAreaForSquare() {
         //given
-        Square square = new Square(7);
+        Square square = new Square(5);
 
         //when
         double area = square.getArea();
 
         //then
-        Assertions.assertEquals(49, area);
+        Assertions.assertEquals(25, area);
     }
 
     @Test
     void shouldBePerimeterForSquare() {
         //given
-        Square square = new Square(8);
+        Square square = new Square(10);
 
         //when
         double perimeter = square.getPerimeter();
 
         //then
-        Assertions.assertEquals(32, perimeter);
+        Assertions.assertEquals(40, perimeter);
     }
 }

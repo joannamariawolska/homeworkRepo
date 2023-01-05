@@ -1,24 +1,18 @@
 package lesson4task2;
 
-public class Square extends Shape{
+public class Square extends Rectangle {
 
-    private double sideA;
-
-    public Square(double sideA) {
-        this.sideA = sideA;
+    public Square(double sideA){
+        super(sideA);
     }
 
     @Override
     public double getArea() {
-        return  sideA * sideA;
+        return getSideA() * getSideA();
     }
 
     @Override
     public double getPerimeter() {
-        return 4 * sideA;
-    }
-
-    public double getSideA() {
-        return sideA;
+        return 4 * getSideA();
     }
 }
