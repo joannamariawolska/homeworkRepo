@@ -13,7 +13,7 @@ public class ReaderFileContent {
             String text = Files.readString(Path.of("/Users/mini/files/data.txt"));
             System.out.println(text);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 }
