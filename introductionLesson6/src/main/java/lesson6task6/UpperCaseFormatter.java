@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static lesson6task6.TXTSave.writeToFile;
+import static lesson6task6.TXTSaver.writeToFile;
 
 public class UpperCaseFormatter {
     public static void formatAndWriteToFile(String inputFilePath, String outputFilePath) {
