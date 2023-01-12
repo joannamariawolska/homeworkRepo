@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class RectangleTest {
 
     @Test
-    void shouldBeAreaForRectangle() {
+    void shouldBeArea() {
         //given
         Rectangle rectangle = new Rectangle(5, 4);
 
@@ -18,7 +18,7 @@ class RectangleTest {
     }
 
     @Test
-    void shouldBePerimeterForRectangle() {
+    void shouldBePerimeter() {
         //given
         Rectangle rectangle = new Rectangle(8, 6);
 

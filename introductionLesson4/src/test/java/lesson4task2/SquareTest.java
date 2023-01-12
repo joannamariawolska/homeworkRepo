@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class SquareTest {
 
     @Test
-    void shouldBeAreaForSquare() {
+    void shouldBeArea() {
         //given
         Square square = new Square(5);
 
@@ -18,7 +18,7 @@ class SquareTest {
     }
 
     @Test
-    void shouldBePerimeterForSquare() {
+    void shouldBePerimeter() {
         //given
         Square square = new Square(10);
 

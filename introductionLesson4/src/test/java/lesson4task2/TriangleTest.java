@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class TriangleTest {
 
     @Test
-    void shouldBeAreaForTriangle() {
+    void shouldBeArea() {
         //given
         Triangle triangle = new Triangle(5, 6, 4, 4.5);
 
@@ -18,7 +18,7 @@ class TriangleTest {
     }
 
     @Test
-    void shouldBePerimeterForTriangle() {
+    void shouldBePerimeter() {
         //given
         Triangle triangle = new Triangle(2, 3, 4, 2.5);
 

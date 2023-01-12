@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class CircleTest {
 
     @Test
-    void shouldGetAreaForCircle() {
+    void shouldGetArea() {
         //given
         Circle circle = new Circle(5);
 
@@ -18,7 +18,7 @@ class CircleTest {
     }
 
     @Test
-    void shouldGetPerimeterForCircle() {
+    void shouldGetPerimeter() {
         //given
         Circle circle = new Circle(3);
 
