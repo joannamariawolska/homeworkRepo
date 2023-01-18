@@ -18,7 +18,11 @@ class TextUpperCaseFormatterTest {
 
     @ParameterizedTest
     @NullAndEmptySource
-    void shouldChangeTextToUpperCase2(String input) {
-        Assertions.assertTrue(input == null || input.isEmpty());
+    void shouldVerifyTextIsNullOrEmpty(String input) {
+        String actualValue = getUpperCase(input);
+
+        if(input == null || input.isEmpty()) {
+            Assertions.assertEquals(input, actualValue);
+        }
     }
 }
