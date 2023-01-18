@@ -9,8 +9,14 @@ class NumberCheckerTest {
 
     @ParameterizedTest
     @ValueSource(ints = {4, 8, 12, 16, 18, 26, 30})
-    void shouldVerifyNumberIsDivisibleBy2(int number) {
-        Assertions.assertTrue(NumberChecker.isDivisibleBy2(number));
+    void shouldVerifyNumberIsEven(int number) {
+        Assertions.assertTrue(NumberChecker.isEven(number));
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {5, 9, 13, 17, 19, 27, 31})
+    void shouldVerifyNumberIsOdd(int number) {
+        Assertions.assertFalse(NumberChecker.isEven(number));
     }
 
     @ParameterizedTest
