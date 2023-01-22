@@ -4,16 +4,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
 import java.util.stream.Stream;
 
 class TextTest {
 
     @ParameterizedTest
     @MethodSource("getLength")
-    void shouldGetStringLength(String input) {
-        int actualValue = input.length();
-        Assertions.assertEquals(Text.getLength(input), actualValue);
+    void shouldGetStringLength(String input, int expectedValue) {
+        Assertions.assertEquals(Text.getLength(input), expectedValue);
     }
 
     public static Stream<Arguments> getLength(){
