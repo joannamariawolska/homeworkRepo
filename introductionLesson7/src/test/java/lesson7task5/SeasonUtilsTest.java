@@ -9,35 +9,67 @@ class SeasonUtilsTest {
     @Test
     void shouldThrowIllegalArgumentException() {
         assertThrows(IllegalArgumentException.class, () ->  {
-            SeasonUtils.getSeason(null);
+            SeasonUtils.printSeason(null);
         });
     }
 
     @Test
-    void shouldIndicateWinter() {
-        assertEquals(Season.WINTER, SeasonUtils.getSeason(Month.DECEMBER));
-        assertEquals(Season.WINTER, SeasonUtils.getSeason(Month.JANUARY));
-        assertEquals(Season.WINTER, SeasonUtils.getSeason(Month.FEBRUARY));
+    void shouldIndicateWinterForDecember() {
+        assertEquals(Season.WINTER, SeasonUtils.printSeason(Month.DECEMBER));
     }
 
     @Test
-    void shouldIndicateSpring() {
-        assertEquals(Season.SPRING, SeasonUtils.getSeason(Month.MARCH));
-        assertEquals(Season.SPRING, SeasonUtils.getSeason(Month.APRIL));
-        assertEquals(Season.SPRING, SeasonUtils.getSeason(Month.MAY));
+    void shouldIndicateWinterForJanuary() {
+        assertEquals(Season.WINTER, SeasonUtils.printSeason(Month.JANUARY));
     }
 
     @Test
-    void shouldIndicateSummer() {
-        assertEquals(Season.SUMMER, SeasonUtils.getSeason(Month.JUNE));
-        assertEquals(Season.SUMMER, SeasonUtils.getSeason(Month.JULY));
-        assertEquals(Season.SUMMER, SeasonUtils.getSeason(Month.AUGUST));
+    void shouldIndicateWinterForFebruary() {
+        assertEquals(Season.WINTER, SeasonUtils.printSeason(Month.FEBRUARY));
     }
 
     @Test
-    void shouldIndicateAutumn() {
-        assertEquals(Season.AUTUMN, SeasonUtils.getSeason(Month.SEPTEMBER));
-        assertEquals(Season.AUTUMN, SeasonUtils.getSeason(Month.OCTOBER));
-        assertEquals(Season.AUTUMN, SeasonUtils.getSeason(Month.NOVEMBER));
+    void shouldIndicateSpringForMarch() {
+        assertEquals(Season.SPRING, SeasonUtils.printSeason(Month.MARCH));
+    }
+
+    @Test
+    void shouldIndicateSpringForApril() {
+        assertEquals(Season.SPRING, SeasonUtils.printSeason(Month.APRIL));
+    }
+
+    @Test
+    void shouldIndicateSpringForMay() {
+        assertEquals(Season.SPRING, SeasonUtils.printSeason(Month.MAY));
+    }
+
+    @Test
+    void shouldIndicateSummerForJune() {
+        assertEquals(Season.SUMMER, SeasonUtils.printSeason(Month.JUNE));
+    }
+
+    @Test
+    void shouldIndicateSummerForJuly() {
+        assertEquals(Season.SUMMER, SeasonUtils.printSeason(Month.JULY));
+    }
+
+    @Test
+    void shouldIndicateSummerForAugust() {
+        assertEquals(Season.SUMMER, SeasonUtils.printSeason(Month.AUGUST));
+    }
+
+    @Test
+    void shouldIndicateAutumnForSeptember() {
+        assertEquals(Season.AUTUMN, SeasonUtils.printSeason(Month.SEPTEMBER));
+    }
+
+    @Test
+    void shouldIndicateAutumnForOctober() {
+        assertEquals(Season.AUTUMN, SeasonUtils.printSeason(Month.OCTOBER));
+    }
+
+    @Test
+    void shouldIndicateAutumnForNovember() {
+        assertEquals(Season.AUTUMN, SeasonUtils.printSeason(Month.NOVEMBER));
     }
 }
