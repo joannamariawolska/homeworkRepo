@@ -9,12 +9,12 @@ import java.util.stream.Stream;
 class TextTest {
 
     @ParameterizedTest
-    @MethodSource("getLength")
+    @MethodSource("provideSampleTexts")
     void shouldGetStringLength(String input, int expectedValue) {
         Assertions.assertEquals(Text.getLength(input), expectedValue);
     }
 
-    public static Stream<Arguments> getLength(){
+    public static Stream<Arguments> provideSampleTexts(){
         return Stream.of(
                 Arguments.of("Samochód", 8),
                 Arguments.of("Auto", 4),
