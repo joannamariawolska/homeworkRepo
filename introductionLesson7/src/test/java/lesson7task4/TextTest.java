@@ -11,7 +11,7 @@ class TextTest {
     @ParameterizedTest
     @MethodSource("provideSampleTexts")
     void shouldGetStringLength(String input, int expectedValue) {
-        Assertions.assertEquals(Text.getLength(input), expectedValue);
+        Assertions.assertEquals(expectedValue, Text.getLength(input));
     }
 
     public static Stream<Arguments> provideSampleTexts(){
