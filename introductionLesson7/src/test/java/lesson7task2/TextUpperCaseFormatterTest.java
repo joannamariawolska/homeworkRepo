@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
-
 import static lesson7task2.TextUpperCaseFormatter.getUpperCase;
 
 class TextUpperCaseFormatterTest {
@@ -20,9 +19,6 @@ class TextUpperCaseFormatterTest {
     @NullAndEmptySource
     void shouldVerifyTextIsNullOrEmpty(String input) {
         String actualValue = getUpperCase(input);
-
-        if(input == null || input.isEmpty()) {
-            Assertions.assertEquals(input, actualValue);
-        }
+        Assertions.assertEquals(input, actualValue);
     }
 }
