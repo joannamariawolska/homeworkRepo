@@ -1,8 +1,21 @@
 package lesson5task5;
 
 public class Car extends Vehicle {
+    private Engine engine;
 
-    public Car(boolean engineStarted) {
-        super(engineStarted);
+    private Car(Engine engine){
+        this.engine = engine;
+    }
+
+    public boolean isEngineStarted() {
+        return engine.isStarted();
+    }
+
+    public void startEngine() {
+        engine.start();
+    }
+
+    public void stopEngine() {
+        engine.stop();
     }
 }
