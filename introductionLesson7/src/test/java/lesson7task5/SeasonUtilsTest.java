@@ -1,6 +1,9 @@
 package lesson7task5;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.EnumSource;
 import java.time.Month;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,63 +16,27 @@ class SeasonUtilsTest {
         });
     }
 
-    @Test
-    void shouldIndicateWinterForDecember() {
-        assertEquals(Season.WINTER, SeasonUtils.printSeason(Month.DECEMBER));
+    @ParameterizedTest
+    @EnumSource(value = Month.class, names = {"DECEMBER", "JANUARY", "FEBRUARY"})
+    void shouldIndicateWinter(Month month) {
+        Assertions.assertEquals(Season.WINTER.toString(), SeasonUtils.printSeason(month));
     }
 
-    @Test
-    void shouldIndicateWinterForJanuary() {
-        assertEquals(Season.WINTER, SeasonUtils.printSeason(Month.JANUARY));
+    @ParameterizedTest
+    @EnumSource(value = Month.class, names = {"MARCH", "APRIL", "MAY"})
+    void shouldIndicateSpring(Month month) {
+        Assertions.assertEquals(Season.SPRING.toString(), SeasonUtils.printSeason(month));
     }
 
-    @Test
-    void shouldIndicateWinterForFebruary() {
-        assertEquals(Season.WINTER, SeasonUtils.printSeason(Month.FEBRUARY));
+    @ParameterizedTest
+    @EnumSource(value = Month.class, names = {"JUNE", "JULY", "AUGUST"})
+    void shouldIndicateSummer(Month month) {
+        Assertions.assertEquals(Season.SUMMER.toString(), SeasonUtils.printSeason(month));
     }
 
-    @Test
-    void shouldIndicateSpringForMarch() {
-        assertEquals(Season.SPRING, SeasonUtils.printSeason(Month.MARCH));
-    }
-
-    @Test
-    void shouldIndicateSpringForApril() {
-        assertEquals(Season.SPRING, SeasonUtils.printSeason(Month.APRIL));
-    }
-
-    @Test
-    void shouldIndicateSpringForMay() {
-        assertEquals(Season.SPRING, SeasonUtils.printSeason(Month.MAY));
-    }
-
-    @Test
-    void shouldIndicateSummerForJune() {
-        assertEquals(Season.SUMMER, SeasonUtils.printSeason(Month.JUNE));
-    }
-
-    @Test
-    void shouldIndicateSummerForJuly() {
-        assertEquals(Season.SUMMER, SeasonUtils.printSeason(Month.JULY));
-    }
-
-    @Test
-    void shouldIndicateSummerForAugust() {
-        assertEquals(Season.SUMMER, SeasonUtils.printSeason(Month.AUGUST));
-    }
-
-    @Test
-    void shouldIndicateAutumnForSeptember() {
-        assertEquals(Season.AUTUMN, SeasonUtils.printSeason(Month.SEPTEMBER));
-    }
-
-    @Test
-    void shouldIndicateAutumnForOctober() {
-        assertEquals(Season.AUTUMN, SeasonUtils.printSeason(Month.OCTOBER));
-    }
-
-    @Test
-    void shouldIndicateAutumnForNovember() {
-        assertEquals(Season.AUTUMN, SeasonUtils.printSeason(Month.NOVEMBER));
+    @ParameterizedTest
+    @EnumSource(value = Month.class, names = {"SEPTEMBER", "OCTOBER", "NOVEMBER"})
+    void shouldIndicateAutumn(Month month) {
+        Assertions.assertEquals(Season.AUTUMN.toString(), SeasonUtils.printSeason(month));
     }
 }
