@@ -1,5 +1,5 @@
 package lesson7task8;
 
-public interface SaturdaySalary {
+public interface SaturdaySalaryService {
     int getAmountSaturday();
 }

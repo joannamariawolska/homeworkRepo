@@ -1,5 +1,5 @@
 package lesson7task8;
 
-public interface BaseSalary {
+public interface BaseSalaryService {
     double getBaseSalary();
 }
