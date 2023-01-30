@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-
 import java.util.stream.Stream;
 
 class URLValidatorTest {
@@ -36,7 +35,7 @@ class URLValidatorTest {
                 Arguments.of("http2://onet.pl"),
                 Arguments.of("httpss://mail.,,google.coooom"),
                 Arguments.of("ht://mail.google.com"),
-                Arguments.of("http://wiadmosci///.onet.pl"),
+                Arguments.of("httpp://wiadmosci///.onet.pl"),
                 Arguments.of("strona"),
                 Arguments.of(" "));
     }
