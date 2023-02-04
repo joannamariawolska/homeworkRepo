@@ -2,7 +2,6 @@ package lesson11task4;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Doctor {
@@ -13,11 +12,11 @@ public class Doctor {
                 "Przychodnia:Internista:Laryngolog:Pediatra"
         );
 
-        Set<String> uniqueSpecialization = specializations.stream()
+        List<String> uniqueSpecialization = specializations.stream()
                 .flatMap(s -> Arrays.stream(s.split(":")))
                 .filter(s -> !s.equals("Szpital") && !s.equals("Przychodnia"))
-                .collect(Collectors.toSet());
-
-        System.out.println(uniqueSpecialization);
+                .distinct()
+                .collect(Collectors.toList());
+        System.out.println(String.join(", ", uniqueSpecialization));
     }
 }
